@@ -1,0 +1,2 @@
+# mysqltools
+1.本次增加的dump功能是使用mysql命令的方式完成,mysql的版本是5.7.23 2.只需要将每个文件中的代码移植到innodb每个对应的文件中,执行源码编译安装,就可以实现所提供的功能 eg:将提供的btr0cur.cc代码移植到innodb的btr目录下的btr0cur.cc文件中即可 3.由于本人水平有限,有错误的地方还请大家指正 4.使用方法: set global innodb_zdr_dump_indextree=index_id; 这里的index_id是一个索引对应的index_id可以通过innodb_sys_indexes视图进行查询到想要的索引. set global innodb_zdr_dump_btreenode='space_id,page_no'; 这里的space_id表示的这个表所在的表空间的ID,page_no表示这个表空间中的某个页的page_no.
