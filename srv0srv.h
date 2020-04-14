@@ -1,2 +1,13 @@
+extern unsigned long    srv_zdr_dump_trxlock;
 extern unsigned long    srv_zdr_dump_indextree;
+extern unsigned long    srv_zdr_dump_fsp_hdr;
+extern unsigned long    srv_zdr_dump_redo_hdr;
+extern char*    srv_zdr_dump_range_lsn_recs;
+extern char*    srv_zdr_dump_redo_block;
+extern char*    srv_zdr_dump_fseg_inode;
 extern char*    srv_zdr_dump_page;
+extern char*	srv_log_group_home_dir;
+extern my_bool  srv_zdr_dump_undo_architecture;
+extern my_bool  srv_zdr_dump_doublewrite;
+extern char*   srv_zdr_dump_rseg_node;
+extern char*   srv_zdr_dump_undolog_node;
